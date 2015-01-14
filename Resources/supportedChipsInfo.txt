@@ -1,0 +1,14 @@
+Программатор чипов AT88SC0204C, AT88SC0204CA
+поддерживает следующие модели принтеров:
+Samsung 3050, 5525, 5530, 3470, XeroxPhaser 3300, 3428, 3435, Dell 1815
+Samsung SCX-4725, Xerox Phaser 3200
+Samsung ML-4550, Xerox Phaser 3600
+Samsung ML-1630/1631, SF 560/565, SCX-4500
+Samsung ML-2850, CLX-8380, Xerox Phaser 3250
+Samsung CLP-660/610, Xerox Phaser 3635
+Samsung CLP-350
+
+Также поддерживаются чипы 24СХХ 
+
+Чипы Xerox 01/90 поддерживаются без возможности восстановления
+однократно программируемой зоны дампа.

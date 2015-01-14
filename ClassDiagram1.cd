@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="mcprog.AT88DumpForm">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>BBAEKJkASCIwAlAIDQaEQWEiCAAAASKEpAFAAoAQDAo=</HashCode>
+      <FileName>AT88DumpForm.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="mcprog.MainForm" Collapsed="true">
+    <Position X="4.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QABMmQmhACEUAhMgBQaAEEAGgAQAAIEBpACCQIBAAAI=</HashCode>
+      <FileName>MainForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="mcprog.Program" Collapsed="true">
+    <Position X="5.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Be.Windows.Forms.BuiltInContextMenu" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAEKDAAQQAAECBDAAAAGADmCMgBAgEEAAQAAIAIIA=</HashCode>
+      <FileName>BuiltInContextMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Be.Windows.Forms.ByteCollection" Collapsed="true">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AGKAAEAAAAAAAAAACAAABAAAAAAAAAAAAAAAAIBUIAA=</HashCode>
+      <FileName>ByteCollection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Be.Windows.Forms.DataBlock" Collapsed="true" HideInheritanceLine="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAggACAAABAAAAAAAAAAAABAAAQACAAAAEAAAAAAAAA=</HashCode>
+      <FileName>DataBlock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Be.Windows.Forms.DataMap" Collapsed="true" HideInheritanceLine="true" BaseTypeListCollapsed="true">
+    <Position X="5.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACIABAAAACAIBAAAAAgNCQAAAAcAAAEAACAACBAYDA=</HashCode>
+      <FileName>DataMap.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Be.Windows.Forms.StaticByteProvider" Collapsed="true" HideInheritanceLine="true" BaseTypeListCollapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAEEACBAAAAADABAgAAEAgAgAIAQAACMA=</HashCode>
+      <FileName>StaticByteProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.19" Collapsed="true" />
+  </Class>
+  <Class Name="Be.Windows.Forms.DynamicFileByteProvider" Collapsed="true" HideInheritanceLine="true" BaseTypeListCollapsed="true">
+    <Position X="8.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAESAQAEQCDAAAACDABAgABEkgAgEIAAAACNA=</HashCode>
+      <FileName>DynamicFileByteProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Be.Windows.Forms.FileByteProvider" Collapsed="true" HideInheritanceLine="true" BaseTypeListCollapsed="true">
+    <Position X="10.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAASAAAEQCBAAAAADABAgAAEEgAgEAAAFACEA=</HashCode>
+      <FileName>FileByteProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Be.Windows.Forms.FileDataBlock" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAgAAAAAAAQAAAAAAAAAABAAAAAAAEAhAAAAAAIAAA=</HashCode>
+      <FileName>FileDataBlock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Be.Windows.Forms.HexBox" Collapsed="true">
+    <Position X="10.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>OQT5zy2F57U0tgCAdrK9Clyx43/fhxksIyIoe9pn7iY=</HashCode>
+      <FileName>HexBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Be.Windows.Forms.MemoryDataBlock" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAhAAAABAAAAAAAAAAAAABAAAAAABBAAAAAAAAACAA=</HashCode>
+      <FileName>MemoryDataBlock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Be.Windows.Forms.NativeMethods" Collapsed="true" HideInheritanceLine="true">
+    <Position X="10.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAQAAEAAAACAAAAAgAAiA=</HashCode>
+      <FileName>NativeMethods.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Be.Windows.Forms.Design.HexFontEditor" Collapsed="true">
+    <Position X="8.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAABAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>HexFontEditor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="mcprog.Properties.Resources" Collapsed="true" HideInheritanceLine="true">
+    <Position X="10.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAEAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="mcprog.Properties.Settings" Collapsed="true">
+    <Position X="8.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="mcprog.MemoryRegion" HideInheritanceLine="true">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAABgAQAAAAAAAAAAAAgABgCAQAAAEIAAAA=</HashCode>
+      <FileName>MemoryRegion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="mcprog.InfoForm">
+    <Position X="4.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAACAAAEAEEECAAIiCAAAAABAAAAEAAAAIEEA=</HashCode>
+      <FileName>InfoForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="mcprog.FileWorker" HideInheritanceLine="true">
+    <Position X="2.75" Y="3" Width="1.5" />
+    <NestedTypes>
+      <Class Name="mcprog.FileWorker.HexStringConverter" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>FileWorker.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>FileWorker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="mcprog.GenaAlfaResetter_v2">
+    <Position X="8.5" Y="6.75" Width="1.5" />
+    <NestedTypes>
+      <Class Name="mcprog.GenaAlfaResetter_v2.GetDataResultsResp2" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>GenaAlfaResetter_v2.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="mcprog.GenaAlfaResetter_v2.QueryResultsResp2" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>GenaAlfaResetter_v2.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="mcprog.GenaAlfaResetter_v2.MemSafeHandle" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>GenaAlfaResetter_v2.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>1FkgiEgCBWcIIOlMogAEIzRBBQYARQBhBkAGqAMSSLQ=</HashCode>
+      <FileName>GenaAlfaResetter_v2.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="mcprog.ALutovResetter">
+    <Position X="11.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAABgBAAAAAEAAAAAASQAATcAAAAABABAgAACCAA=</HashCode>
+      <FileName>ALutovResetter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Struct Name="Be.Windows.Forms.BytePositionInfo" Collapsed="true">
+    <Position X="8.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAEAAAAAAAAAgAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>BytePositionInfo.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="mcprog.IHexBoxSetting" Collapsed="true">
+    <Position X="8.5" Y="4.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IHexBoxSetting.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Be.Windows.Forms.IByteProvider" Collapsed="true">
+    <Position X="10.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEACBAAAAADABAgAAEAgAgAAAAAACEA=</HashCode>
+      <FileName>IByteProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="mcprog.IAT88Programmer">
+    <Position X="0.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAJAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IAT88Programmer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="mcprog.IM24CXXProgrammer">
+    <Position X="2.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAJAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IM24CXXProgrammer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="mcprog.IChipProgrammer">
+    <Position X="2" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAJAAAAEEAAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IChipProgrammer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="mcprog.IPresetting">
+    <Position X="12.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAQAAAAAAAAAAAAABAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>IPresetting.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="mcprog.IXerox0190Programmer">
+    <Position X="4" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAJAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>IXerox0190Programmer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="mcprog.I921Programmer">
+    <Position X="6" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAJAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>I921Programmer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="mcprog.IOneWireProgrammer">
+    <Position X="4.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IOneWireProgrammer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Be.Windows.Forms.HexCasing" Collapsed="true">
+    <Position X="6.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>HexCasing.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6B8E8D55-D99D-4A6F-8D2C-4BDF92251371}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>mcprog</RootNamespace>
+    <AssemblyName>mcprog</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsFormsIntegration">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="24CXXDumpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="24CXXDumpForm.Designer.cs">
+      <DependentUpon>24CXXDumpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ALutovResetter.cs" />
+    <Compile Include="ARM_Emulator.cs" />
+    <Compile Include="AT88DumpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AT88DumpForm.Designer.cs">
+      <DependentUpon>AT88DumpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoForm.Designer.cs">
+      <DependentUpon>AutoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BootloaderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BootloaderForm.Designer.cs">
+      <DependentUpon>BootloaderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuiltInContextMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ByteCollection.cs" />
+    <Compile Include="BytePositionInfo.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="CRC.cs" />
+    <Compile Include="CRUM921Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRUM921Form.Designer.cs">
+      <DependentUpon>CRUM921Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EM4100Support.cs" />
+    <Compile Include="FileWorker.cs" />
+    <Compile Include="GA2ResetterInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GA2ResetterInfoForm.Designer.cs">
+      <DependentUpon>GA2ResetterInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GA3FREEResetterInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GA3FREEResetterInfoForm.Designer.cs">
+      <DependentUpon>GA3FREEResetterInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GA3ResetterInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GA3ResetterInfoForm.designer.cs">
+      <DependentUpon>GA3ResetterInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GA5ResetterInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GA5ResetterInfoForm.Designer.cs">
+      <DependentUpon>GA5ResetterInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenaAlfaResetter_rev3free.cs" />
+    <Compile Include="GenaAlfaResetter_rev5.cs" />
+    <Compile Include="GenaAlfaResetter_v1.cs" />
+    <Compile Include="GenaAlfaResetter_v2.cs" />
+    <Compile Include="GenaAlfaResetter_v3.cs" />
+    <Compile Include="HardwareController.cs" />
+    <Compile Include="I2CReadPacketsFactory.cs" />
+    <Compile Include="I2CWritePacketsFactory.cs" />
+    <Compile Include="I2C_Packet.cs" />
+    <Compile Include="I921Programmer.cs" />
+    <Compile Include="IgoruhaResetterInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IgoruhaResetterInfoForm.Designer.cs">
+      <DependentUpon>IgoruhaResetterInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IgoruhaResetter_V0.cs" />
+    <Compile Include="IM24CXXProgrammer.cs" />
+    <Compile Include="IAT88Programmer.cs" />
+    <Compile Include="IChipProgrammer.cs" />
+    <Compile Include="IM25CXXProgrammer.cs" />
+    <Compile Include="InfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoForm.Designer.cs">
+      <DependentUpon>InfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InfoPanel.Designer.cs">
+      <DependentUpon>InfoPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IOneWireProgrammer.cs" />
+    <Compile Include="IPresetting.cs" />
+    <Compile Include="IRFIDProgrammer.cs" />
+    <Compile Include="IUSBPackets.cs" />
+    <Compile Include="IUSBPacketsFactory.cs" />
+    <Compile Include="IXerox0190Programmer.cs" />
+    <Compile Include="M25CXXDumpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="M25CXXDumpForm.Designer.cs">
+      <DependentUpon>M25CXXDumpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mcprogInfoFlowLayoutPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="mcprogInfoFlowLayoutPanel.Designer.cs">
+      <DependentUpon>mcprogInfoFlowLayoutPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemoryRegion.cs" />
+    <Compile Include="MicrochipBootloaderHardware.cs" />
+    <Compile Include="OneWireDumpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OneWireDumpForm.Designer.cs">
+      <DependentUpon>OneWireDumpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProgrammingProcessInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RFDemodulator.cs" />
+    <Compile Include="RFIDDumpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RFIDDumpForm.Designer.cs">
+      <DependentUpon>RFIDDumpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SS02DynpassGen.cs" />
+    <Compile Include="StaticByteProvider.cs" />
+    <Compile Include="DataBlock.cs" />
+    <Compile Include="DataMap.cs" />
+    <Compile Include="DynamicByteProvider.cs" />
+    <Compile Include="DynamicFileByteProvider.cs" />
+    <Compile Include="FileByteProvider.cs" />
+    <Compile Include="FileDataBlock.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HexBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HexCasing.cs" />
+    <Compile Include="HexFontEditor.cs" />
+    <Compile Include="IByteProvider.cs" />
+    <Compile Include="IHexBoxSetting.cs" />
+    <Compile Include="MemoryDataBlock.cs" />
+    <Compile Include="NativeMethods.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="24CXXDumpForm.resx">
+      <DependentUpon>24CXXDumpForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AT88DumpForm.resx">
+      <DependentUpon>AT88DumpForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoForm.resx">
+      <DependentUpon>AutoForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BootloaderForm.resx">
+      <DependentUpon>BootloaderForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoForm.resx">
+      <DependentUpon>InfoForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoPanel.resx">
+      <DependentUpon>InfoPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HexBox.resx">
+      <DependentUpon>HexBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Win32HardwareIOSupport.cs" />
+    <Compile Include="Xerox0190Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Xerox0190Form.Designer.cs">
+      <DependentUpon>Xerox0190Form.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app.ico" />
+    <None Include="Caret.bmp" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="InfoPanelClassDiagram.cd" />
+    <Content Include="info.css" />
+    <None Include="Resources\alterPage.txt" />
+    <Content Include="Resources\app.ico" />
+    <Content Include="Resources\info.htm" />
+    <None Include="Resources\startfon.png" />
+    <None Include="Resources\newsBodyInfo.txt" />
+    <None Include="Resources\conferenceInfo.txt" />
+    <EmbeddedResource Include="CRUM921Form.resx">
+      <DependentUpon>CRUM921Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GA2ResetterInfoForm.resx">
+      <DependentUpon>GA2ResetterInfoForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GA3FREEResetterInfoForm.resx">
+      <DependentUpon>GA3FREEResetterInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GA3ResetterInfoForm.resx">
+      <DependentUpon>GA3ResetterInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GA5ResetterInfoForm.resx">
+      <DependentUpon>GA5ResetterInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IgoruhaResetterInfoForm.resx">
+      <DependentUpon>IgoruhaResetterInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OneWireDumpForm.resx">
+      <DependentUpon>OneWireDumpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\autorsInfo.txt" />
+    <EmbeddedResource Include="RFIDDumpForm.resx">
+      <DependentUpon>RFIDDumpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xerox0190Form.resx">
+      <DependentUpon>Xerox0190Form.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Resources\supportedChipsInfo.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
