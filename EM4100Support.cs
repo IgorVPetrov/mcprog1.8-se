@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
-
+/этот класс обрабатывает строку полученную от RFDemodulator
 namespace mcprog
 {
     class EM4100Support
@@ -90,10 +90,11 @@ namespace mcprog
             
             return true;
         }
-        
+        /этот метод проверяет соответствуют ли входные данные манчестерской кодировке
+        / делает проверку на чётность согласно протоколу и декодирует данные
         public bool ManchesterDecoder()
         {
-
+           /здесь ищется стартовый маркер состоящий согласно протоколу из девяти единиц
             Regex marker = new Regex("010101010101010101");
 
             MatchCollection mc = marker.Matches(_demod.Output);
@@ -146,7 +147,7 @@ namespace mcprog
             return false;
             
         }
-
+        /этот метод соттветственно проверяет входную строку на соответствие бифазной кодировке
         public bool BiphaseDecoder()
         {
             Regex marker1 = new Regex("010101010101010101");
