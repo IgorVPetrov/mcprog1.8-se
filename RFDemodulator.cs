@@ -1,32 +1,8 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-/*
-этот класс обрабатывает ответ от программатора
-программатор собран на контроллере PIC18F4550 
-к нему подключён модуль на микросхеме EM4095
-при чтении транспондера интерес представляют 2 сигнала 
-1) синхронизация - на этом выходе меандр с частотой радиосигнала 
-2) выход демодулированного сигнала
 
-коннтроллер ждёт момента когда на выходе будет логическая 1
-и с этого момента начинает анализ
-контроллер подсчитывает сколько периодов радиочастоты длится 
-состояние логической 1 на выходе демодулятора и сохраняет это значение
-потом измеряет сколько длится состояние логического 0 и так же сохраняет
-потом снова лог 1 итд
-всего сохраняется 256 значений и получается 256 байтов
-потом эти значения передаются пакетами по 64 байта в программу
-
-так работает железо(это я написал чтобы было понятно в каком виде передаются
-считанные с транспондера данные)
-считанные с контроллера данные передаются конструктору класса RFDemodulator(byte[] data)
-
-RF/8 RF/16 RF/32 RF/64
-для определения data rate я использую класс Tester
-
-*/
 namespace mcprog
 {
     public class RFDemodulator
@@ -34,17 +10,16 @@ namespace mcprog
         int _datarate=0;
         string _output="";
         bool _isvalid=false;
-        //вот здесь создаются экземпляры класса Tester для каждой возможной data rate
+        
         Tester _tester08 = new Tester(4, 11);
         Tester _tester16 = new Tester(12, 20);
         Tester _tester32 = new Tester(24, 40);
         Tester _tester64 = new Tester(56, 72);
-        //количество периодов берётся c запасом так как реальный сигнал имеет фронт и спад
+        
         Dictionary<int, Tester> _testers = new Dictionary<int, Tester>();
 
         public RFDemodulator(byte[] data)
         {
-            //здесь они добавляются в ассоциативный массив
             _testers.Add(8, _tester08);
             _testers.Add(16, _tester16);
             _testers.Add(32, _tester32);
@@ -53,10 +28,9 @@ namespace mcprog
             int lowIndex = 64;
             int highIndex = 0;
 
-            foreach (byte b in data)//перебираются все байты из массива, пришедшего с контроллера
-            // и проверяется все ли они укладываются в заданные диапазоны
+            foreach (byte b in data)
             {
-                bool found=false;//эта переменная показывает обнаружен ли правильный диапазон
+                bool found=false;
                 foreach (KeyValuePair<int, Tester> pair in _testers)
                 {
                     if (pair.Value.Test(b))
