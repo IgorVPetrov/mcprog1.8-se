@@ -29,7 +29,7 @@ http://www.priority1design.com.au/em4100_protocol.html
 для декодирования я использую 2 класса 
 
 RFDemodulator преобразует полученные данные в строку вида 1100101010....
-
+EM4100Support получает эту строку , анализирует и извлекает из неё данные
 
 */
 
@@ -39,10 +39,11 @@ namespace mcprog
 {
     public class RFDemodulator
     {
-        int _datarate=0;
-        string _output="";
+        int _datarate=0;/это скорость передачи данных
+        /у неё ряд фиксированных значений RF/8 RF/16 RF/32 RF/64
+        string _output="";/ это строка с выходными данными
         bool _isvalid=false;
-        
+        /это экземпляры класса Tester они определяют скорость передачи данных
         Tester _tester08 = new Tester(4, 11);
         Tester _tester16 = new Tester(12, 20);
         Tester _tester32 = new Tester(24, 40);
@@ -63,6 +64,7 @@ namespace mcprog
             foreach (byte b in data)
             {
                 bool found=false;
+                /побайтно проверяются все входные данные
                 foreach (KeyValuePair<int, Tester> pair in _testers)
                 {
                     if (pair.Value.Test(b))
@@ -83,6 +85,7 @@ namespace mcprog
             _datarate = highIndex;
 
             bool curbit = true;
+            /здесь из входных данных делается строка, которая и передаётся классу EM4100Support
             foreach (byte b in data)
             {
                 _output = _output + (_testers[lowIndex].Test(b) ? (curbit ? "1" : "0") : (curbit ? "11" : "00"));
